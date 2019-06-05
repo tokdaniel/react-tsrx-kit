@@ -12,6 +12,8 @@
   "author": "Daniel Tok",
   "license": "MIT",
   "dependencies": {
+    "@material-ui/core": "4.0.2",
+    "@material-ui/icons": "4.0.1",
     "connected-react-router": "6.4.0",
     "history": "4.9.0",
     "react": "16.8.6",

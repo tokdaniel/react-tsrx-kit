@@ -86,7 +86,7 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: path.resolve(__dirname, '../static/html/template.html'),
+      template: path.resolve(__dirname, '../static/templates/template.html'),
       filename: 'index.html',
     }),
     new webpack.optimize.SplitChunksPlugin({
