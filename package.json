@@ -1,0 +1,53 @@
+{
+  "name": "react-tsrx-kit",
+  "version": "1.0.0",
+  "description": "Kit for building apps with [TypeScript, React, Redux, Redux-Observables, Sass] stack",
+  "main": "src/index.tsx",
+  "scripts": {
+    "start": "NODE_ENV=development webpack-dev-server --mode development --open --hot --progress --config ./webpack/dev.js --watch",
+    "build-dev": "rimraf build && NODE_ENV=development webpack --mode development --open --hot --progress --config ./webpack/dev.js --watch",
+    "build": "rimraf build && NODE_ENV=production webpack --mode production --progress --config ./webpack/prod.js",
+    "analyze-bundle": "rimraf build && NODE_ENV=production webpack --mode production --progress --config ./webpack/analyze.js"
+  },
+  "author": "Daniel Tok",
+  "license": "MIT",
+  "dependencies": {
+    "connected-react-router": "6.4.0",
+    "history": "4.9.0",
+    "react": "16.8.6",
+    "react-dom": "16.8.6",
+    "react-redux": "7.0.3",
+    "react-router": "5.0.0",
+    "react-router-dom": "5.0.0",
+    "redux": "4.0.1",
+    "redux-observable": "1.1.0",
+    "rxjs": "6.5.2"
+  },
+  "devDependencies": {
+    "@types/react": "16.8.19",
+    "@types/react-dom": "16.8.4",
+    "@types/react-router": "5.0.1",
+    "@types/react-router-dom": "4.3.3",
+    "@types/rx": "4.1.1",
+    "compression-webpack-plugin": "2.0.0",
+    "css-loader": "1.0.1",
+    "cssnano": "4.1.10",
+    "html-loader": "0.5.5",
+    "html-webpack-plugin": "3.2.0",
+    "mini-css-extract-plugin": "0.7.0",
+    "node-sass": "^4.12.0",
+    "postcss-import": "12.0.1",
+    "postcss-loader": "3.0.0",
+    "postcss-preset-env": "6.6.0",
+    "rimraf": "2.6.3",
+    "sass-loader": "7.1.0",
+    "style-loader": "0.23.1",
+    "ts-loader": "6.0.2",
+    "typescript": "3.5.1",
+    "typings-for-css-modules-loader": "1.7.0",
+    "webpack": "4.32.2",
+    "webpack-bundle-analyzer": "3.3.2",
+    "webpack-cli": "3.3.2",
+    "webpack-dev-server": "3.5.1"
+  }
+}
