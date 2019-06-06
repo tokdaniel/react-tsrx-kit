@@ -52,7 +52,7 @@ module.exports = {
           {
             loader: "typings-for-css-modules-loader",
             options: {
-              namedexport: true,
+              namedExport: true,
               camelcase: true,
               modules: true
             }

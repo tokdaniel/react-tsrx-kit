@@ -1,5 +1,1 @@
-export interface IGlobalScss {
-  'content': string;
-}
-
-export const locals: IGlobalScss;
+export const content: string;
