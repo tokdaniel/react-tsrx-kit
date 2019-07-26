@@ -4,10 +4,10 @@
   "description": "Kit for building apps with [TypeScript, React, Redux, Redux-Observables, Sass] stack",
   "main": "src/index.tsx",
   "scripts": {
-    "start": "NODE_ENV=development webpack-dev-server --mode development --open --hot --progress --config ./webpack/dev.js --watch",
-    "build-dev": "rimraf build && NODE_ENV=development webpack --mode development --open --hot --progress --config ./webpack/dev.js --watch",
-    "build": "rimraf build && NODE_ENV=production webpack --mode production --progress --config ./webpack/prod.js",
-    "analyze-bundle": "rimraf build && NODE_ENV=production webpack --mode production --progress --config ./webpack/analyze.js"
+    "start": "cross-env NODE_ENV=development webpack-dev-server --mode development --open --hot --progress --config ./webpack/dev.js --watch",
+    "build-dev": "rimraf build && cross-env NODE_ENV=development webpack --mode development --open --hot --progress --config ./webpack/dev.js --watch",
+    "build": "rimraf build && cross-env NODE_ENV=development webpack --mode production --progress --config ./webpack/prod.js",
+    "analyze-bundle": "rimraf build && cross-env NODE_ENV=production webpack --mode production --progress --config ./webpack/analyze.js"
   },
   "author": "Daniel Tok",
   "license": "MIT",
@@ -15,6 +15,7 @@
     "@material-ui/core": "4.0.2",
     "@material-ui/icons": "4.0.1",
     "connected-react-router": "6.4.0",
+    "cross-env": "^5.2.0",
     "history": "4.9.0",
     "react": "16.8.6",
     "react-dom": "16.8.6",
